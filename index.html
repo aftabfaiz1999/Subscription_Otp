@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .content ul li strong {
+            color: #333;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your BusinessPaysell Subscription Update</h1>
+        </div>
+        <div class="content">
+            <p>Hello {{name}},</p>
+            <p>Your BusinessPaysell subscription has been renewed. Here are your updated subscription details:</p>
+            <ul>
+                <li><strong>Subscription End Date:</strong> {{subscriptionEndDate}}</li>
+                <li><strong>Last Payment Amount:</strong> ₹{{lastPaymentAmount}}</li>
+                <li><strong>Last Payment Date:</strong> {{lastPaymentDate}}</li>
+                <li><strong>Last Payment Method:</strong> {{lastPaymentMethod}}</li>
+            </ul>
+            <p><strong>Company Name:</strong> {{companyName}}</p>
+            <p><strong>GST Number:</strong> {{gstNumber}}</p>
+            <p>Thank you for continuing to use BusinessPaysell for your business needs. If you have any questions, please don't hesitate to contact us.</p>
+            <p>Best regards,<br>The BusinessPaysell Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 BusinessPaysell. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
